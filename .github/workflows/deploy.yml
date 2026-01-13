@@ -5,11 +5,14 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
@@ -23,7 +26,18 @@ jobs:
       - name: Build
         run: bun run build
 
-      - name: Deploy 🚀
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: ./dist
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 🚀 Deploy page
+        uses: actions/deploy-pages@v4
+        id: deployment
