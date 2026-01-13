@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "bun build ./main.ts --outdir ./dist",
+    "build": "bun build ./main.ts --outdir ./dist && cp index.html dist/",
     "start": "bunx serve .",
     "dev": "bun run build && bunx serve ."
   },
