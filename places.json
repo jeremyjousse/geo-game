@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Chat Botté",
+    "latitude": 50.63629972197279,
+    "longitude": 3.132773486553818,
+    "description": "A large public park in New York City.",
+    "picture_url": "https://fichier0.cirkwi.com/image/photo/poi/800x500/2442930/fr/0.jpg?1685628419"
+  },
+  {
+    "id": 2,
+    "name": "Gouttes d'eau",
+    "latitude": 50.6353733,
+    "longitude": 3.1339735,
+    "description": "A large public park in New York City.",
+    "picture_url": "https://fichier0.cirkwi.com/image/photo/poi/800x500/2442916/fr/0.jpg?1685628412"
+  },
+  {
+    "id": 3,
+    "name": "Église Saint-Pierre",
+    "latitude": 50.63617988401546,
+    "longitude": 3.1290579370970053,
+    "description": "A large public park in New York City.",
+    "picture_url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/e0/47/14/eglise-st-pierre.jpg?w=800&h=-1&s=1"
+  }
+]
